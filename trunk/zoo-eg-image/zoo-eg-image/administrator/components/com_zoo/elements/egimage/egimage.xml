@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<element type="egimage" group="Eg">
+    <name>Загружаемое изображение [eg]</name>
+    <author>EG</author>
+    <creationDate>Октябрь 2009</creationDate>
+    <version>1.1.0</version>
+    <description>Загружаемое изображение</description>
+    <params>
+        <param name="name" type="configeditname" default="" label="Имя" description="Уникальное имя" />
+        <param name="label" type="text" default="" label="Метка" description="Метка в редакторе экземпляра продукта" />
+        <param name="description" type="text" default="" label="Описание" description="Всплывающая подсказка в редакторе экземпляра продукта" />
+        <param name="display" type="list" default="2" label="Отображение" description="Отображение элемента только на выбранных формах">
+            <option value="1">На странице продукта</option>
+           <option value="2">На странице списка продуктов</option>
+            <option value="3">На обоих страницах</option>
+            <option value="0">Не отображать</option>
+        </param>
+        <param name="img_width" type="text" default="300" label="Ширина изображения (px)"
+        description="Ширина изображения в пикселах" />
+        <param name="img_th_width" type="text" default="128" label="Ширина маленького изображения (px)"
+        description="Ширина тамбнейла" />
+        <param name="clean_chance" type="text" default="20" label="Шанс очистки директории аплоада"
+        description="Частота очистки директории сохранения изображений от накопившегося мусора. Считается как _один из ..._. При каждом входе на страницу редактирования продукта с элементом изображения, есть шанс, что произойдет автоматическая чистка. Шансы устанавливаются здесь. Попытка очистки происходит для каждого изображения отдельно." />
+    </params>
+</element>
